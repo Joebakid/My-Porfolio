@@ -10,17 +10,20 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
   useEffect(() => {
     projectsRef.current.forEach((el, index) => {
       if (el) {
-        gsap.set(el, { opacity: 0, y: 50 }); // Set initial opacity & position
+        gsap.set(el, { opacity: 0, y: 30, scale: 0.98 }); // Smaller initial offset
+
         gsap.to(el, {
           opacity: 1,
           y: 0,
-          duration: 1.2,
+          scale: 1,
+          duration: 5, // Faster transition
           ease: "power2.out",
+          delay: index * 0.15, // Stagger effect for smoother appearance
           scrollTrigger: {
             trigger: el,
-            start: "top 95%", // Animation only starts when almost in view
-            end: "bottom 10%",
-            toggleActions: "play pause resume reset", // Ensures better control
+            start: "top 85%", // Triggers animation earlier
+            end: "bottom 15%",
+            toggleActions: "play none none reset",
           },
         });
       }
