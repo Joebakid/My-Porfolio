@@ -154,8 +154,8 @@ body {
 }
 
 .sticky {
-  /* background-color: var(--stikcy-color); */
-
+  background-color: var(--stikcy-color);
+  position: fixed;
   border: 1px solid var(--link-ex-color);
   left: 10%;
   right: 10%;
@@ -167,6 +167,9 @@ body {
   top: 0;
   height: 70px;
   z-index: 2;
+  top: 2%;
+  margin-bottom: 300px;
+  /* margin: 100px 0; */
 }
 
 /* NAV/////// */
@@ -176,7 +179,7 @@ body {
   justify-content: space-between;
   align-items: center;
   /* padding: 50px 0; */
-  margin: 50px 0;
+  /* margin: 50px 0; */
 }
 
 .blog {
@@ -219,6 +222,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 50px 0;
+  margin-top: 100px;
 }
 
 .gray-text {
@@ -558,6 +562,10 @@ pre {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
   }
