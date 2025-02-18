@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function Likes({ BackBtn, Loader }) {
+function Likes({  Loader }) {
   const [videoLoaded, setVideoLoaded] = useState({});
   const [showIframe, setShowIframe] = useState({});
   // const [videoLoaded, setVideoLoaded] = useState({});
@@ -152,7 +152,9 @@ function Likes({ BackBtn, Loader }) {
 
   return (
     <>
-      <BackBtn back="< Go back" />
+      {/* <BackBtn back="< Go
+
+      back" /> */}
       <div className="likes-container">
         {sections.map((section, sectionIndex) => (
           <div key={sectionIndex} className="likes-section">

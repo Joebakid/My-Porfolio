@@ -202,7 +202,7 @@ function App() {
             element={
               <Likes
                 ProjectItem={ProjectItem}
-                BackBtn={BackBtn}
+                // BackBtn={BackBtn}
                 Loader={Loader}
               />
             }
