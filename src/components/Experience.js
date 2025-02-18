@@ -67,7 +67,7 @@ function Experience({ Template, LinkEx }) {
               In collaboration with{" "}
               <LinkEx text="david ogar" href="https://www.owogogah.com/" />
               {" and "}
-              <LinkEx text="turbo layefa" href="https://github.com/T-laye" />
+              <LinkEx text="turbo layefa" href="https://tlaye.vercel.app/" />
               {" we made "}
               <LinkEx text="chucksale" href="https://www.chucksales.com/" />.
             </>
@@ -147,7 +147,7 @@ function Experience({ Template, LinkEx }) {
               Made a startup called
               <LinkEx
                 text="chronoliteNg"
-                href="https://www.doginalduppets.com/"
+                href="https://chronolite.com.ng/"
               />{" "}
               . We sell male/female watches, female Bags, Tee's and Caps.
             </>
