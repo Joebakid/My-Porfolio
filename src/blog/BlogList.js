@@ -9,7 +9,7 @@ function BlogList({ BlogListItems }) {
     const date = new Date(inputDate);
     return date
       .toLocaleDateString("en-US", {
-        month: "long",
+        month: "short",
         day: "numeric",
         year: "numeric",
       })
@@ -68,11 +68,7 @@ function BlogList({ BlogListItems }) {
       blogtitle: "CSS Frameworks",
       slug: "css-frameworks",
     },
-    {
-      timestamp: getFormattedDate("2023-01-01"),
-      blogtitle: "8 popular JavaScript libraries",
-      slug: "popular-javascript-libraries",
-    },
+
     {
       timestamp: getFormattedDate(new Date()),
       blogtitle: "Libraries built on top of React",
@@ -83,10 +79,15 @@ function BlogList({ BlogListItems }) {
       blogtitle: "Cheap Smart glasses you can access ChatGpt Under $299",
       slug: "smart-glasses",
     },
+    {
+      timestamp: getFormattedDate("2025-1-10"),
+      blogtitle: "Popular JavaScript libraries",
+      slug: "popular-javascript-libraries",
+    },
   ];
 
   return (
-    <section className="content-padding" ref={blogListRef}>
+    <section className="content-padding blog-list-align" ref={blogListRef}>
       <div className="blog-list-title">
         <h1>Blog</h1>
       </div>

@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function Likes({  Loader }) {
+function Likes({ Loader }) {
   const [videoLoaded, setVideoLoaded] = useState({});
   const [showIframe, setShowIframe] = useState({});
   // const [videoLoaded, setVideoLoaded] = useState({});
