@@ -78,6 +78,11 @@ function BlogList({ BlogListItems }) {
       blogtitle: "Libraries built on top of React",
       slug: "react-libraries",
     },
+    {
+      timestamp: getFormattedDate(new Date()),
+      blogtitle: "Cheap Smart glasses you can access ChatGpt Under $299",
+      slug: "smart-glasses",
+    },
   ];
 
   return (
