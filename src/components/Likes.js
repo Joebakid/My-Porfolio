@@ -59,6 +59,7 @@ function Likes({  Loader }) {
         { title: "The Social Network", year: "2010", videoId: "lB95KLmpLR4" },
         { title: "Oppenheimer", year: "2023", videoId: "uRJQJcy3f8w" },
         { title: "Shutter Island", year: "2010", videoId: "v8yrZSkKxTA" },
+        { title: "dune 2", year: "2023", videoId: "Way9Dexny3w" },
       ],
     },
     {
