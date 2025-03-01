@@ -92,7 +92,7 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       hrefBtnPrimary: "https://github.com/CHUCKSALE",
     },
     {
-      src: "/img/DOGINAL DUPPETS.png",
+      src: "/img/duppet.jpg",
       title: "WEBSITE",
       text: "REACT JS",
       hrefBtnMain: "https://www.doginalduppets.com/",
