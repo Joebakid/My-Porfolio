@@ -251,6 +251,7 @@ body {
   display: flex;
   align-items: center;
   gap: 100px;
+  width: 100%;
 }
 
 .template-text {
@@ -266,7 +267,7 @@ body {
 .title {
   margin: 40px 0;
   border-bottom: 3px solid var(--project-underline);
-  width: 30%;
+  /* width: 100%; */
   cursor: pointer;
 }
 
@@ -274,7 +275,7 @@ body {
 .title {
   margin: 40px 0;
   border-bottom: 3px solid transparent; /* Make the original border transparent */
-  width: 30%;
+  /* width: 30%; */
   position: relative;
   overflow: hidden; /* Ensure the animation stays within bounds */
 }
