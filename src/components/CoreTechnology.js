@@ -55,6 +55,8 @@ function CoreTechnology({ Template }) {
     "NEXT.JS",
     "REACT",
     "TYPESCRIPT",
+    'GSAP',
+    'FRAMER-MOTION'
   ];
 
   return (
