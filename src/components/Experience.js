@@ -73,6 +73,18 @@ function Experience({ Template, LinkEx }) {
             </>
           }
         />
+        <ExperienceItem
+          text={
+            <>
+              In collaboration with{" "}
+              <LinkEx text="david ogar" href="https://www.owogogah.com/" />
+             
+              
+              {" we made "}
+              <LinkEx text="ronscryptotherapy" href="https://ronscryptotherapy.com/" /> with payment integration from fiat directly to cryptocurrency.
+            </>
+          }
+        />
 
         <ExperienceItem
           text={
@@ -144,7 +156,7 @@ function Experience({ Template, LinkEx }) {
         <ExperienceItem
           text={
             <>
-              Made a startup called
+              Made my own startup called
               <LinkEx
                 text="chronoliteNg"
                 href="https://chronolite.com.ng/"
