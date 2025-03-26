@@ -47,7 +47,7 @@ function App() {
     return loading ? <div className="loader">Loading...</div> : null;
   }
 
-  function ProjectItem({ title, text, src, alt, hrefBtnMain, hrefBtnPrimary }) {
+  function ProjectItem({ title, text, src,aboutProject, alt, hrefBtnMain, hrefBtnPrimary }) {
     useEffect(() => {
       gsap.fromTo(
         ".project-card",
@@ -58,13 +58,15 @@ function App() {
     return (
       <div className="project-card">
         {/* Render image only if src is provided */}
-        {src && (
+        {/* {src && (
           <img
             className="img-className"
             src={src}
             alt={alt || "Project image"}
           />
-        )}
+        )} */}
+
+       
 
         <div className="project-description">
           {/* Render title only if it exists */}
@@ -72,6 +74,10 @@ function App() {
 
           {/* Render text only if it exists */}
           {text && <p>{text}</p>}
+
+          <br/>
+
+          <p>{aboutProject}</p>
         </div>
 
         <div className="btn-flex">

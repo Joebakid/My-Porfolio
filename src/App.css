@@ -420,12 +420,15 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  /* height: 100%; */
+  
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
   gap: 20px;
   padding: 10px;
 }
@@ -438,6 +441,7 @@ body {
 
 .project-description {
   padding: 10px 0;
+  height: 290px;
 }
 
 .project-description p {
