@@ -640,7 +640,7 @@ pre {
 
   .blog-flex {
     flex-direction: column;
-    gap: 0;
+    gap: 7px;
   }
 
   /* FOOTER */
