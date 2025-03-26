@@ -9,32 +9,29 @@ function Nav() {
   );
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // useEffect(() => {
-  //   gsap.to(".nav-container", { opacity: 1, y: 0, duration: 0 });
+  useEffect(() => {
+    // Animate only if not scrolled
+    if (!isScrolled) {
+      gsap.fromTo(
+        ".nav-container",
+        { opacity: 0, y: -30 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      );
+    }
 
-  //   gsap.from(".nav-container", {
-  //     opacity: 1,
-  //     y: -30,
-  //     duration: 1,
-  //     ease: "power2.out",
-  //   });
+    // Handle scrolling behavior
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
 
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 50);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isScrolled]); // Depend on isScrolled to prevent reanimation
 
   useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark-mode");
-      document.body.classList.remove("light-mode");
-    } else {
-      document.body.classList.add("light-mode");
-      document.body.classList.remove("dark-mode");
-    }
+    // Toggle dark mode classes
+    document.body.classList.toggle("dark-mode", darkMode);
+    document.body.classList.toggle("light-mode", !darkMode);
     localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
@@ -46,7 +43,7 @@ function Nav() {
           {darkMode ? "☀️" : "🌙"}
         </button>
 
-        {/* Dynamic Blog/Home Link */}
+        {/* Navigation Links */}
         <Link
           to={location.pathname === "/blog" ? "/" : "/blog"}
           className="hover-underline blog"

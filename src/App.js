@@ -9,9 +9,9 @@ import CoreTechnology from "./components/CoreTechnology";
 import Experience from "./components/Experience";
 import NavBar from "./components/Nav";
 import Services from "./components/Services";
-import BlogList from "./blog/BlogList";
+import BlogList from "./components/Blog/BlogList";
 import Footer from "./components/Footer";
-import BlogPage from "./blog/BlogPage";
+// import BlogPage from "./blog/BlogPage";
 import { useEffect } from "react";
 import gsap from "gsap";
 import Likes from "./components/Likes";
@@ -189,14 +189,9 @@ function App() {
               </>
             }
           />
-          <Route
-            path="/blog"
-            element={<BlogList BlogListItems={BlogListItems} />}
-          />
-          <Route
-            path="/blog/:slug"
-            element={<BlogPage BackBtn={BackBtn} ProjectItem={ProjectItem} />}
-          />
+
+<Route path="/blog" element={<BlogList />} />
+         
           <Route
             path="/Likes"
             element={

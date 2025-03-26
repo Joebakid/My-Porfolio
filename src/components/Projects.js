@@ -36,6 +36,13 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
 
   const projects = [
     {
+      src: "/img/ron.jpg",
+      title: "Crypto Payment",
+      text: "React js,Typescript",
+      hrefBtnMain: "https://ronscryptotherapy.com/",
+      hrefBtnPrimary: "https://github.com/Joebakid/Ron-s-Crypto-Therapy---Master-Crypto-Trading",
+    },
+    {
       src: "/img/chronolite.jpg",
       title: "Ecommerce",
       text: "React js",
@@ -53,7 +60,7 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       src: "/img/blubot.jpg",
       title: "TELEGRAM BOT",
       text: "TS JS",
-      hrefBtnMain: "https://blubot.xyz/",
+      hrefBtnMain: "https://chuckbot.xyz/",
       hrefBtnPrimary: "https://github.com/Joebakid/BluBot",
     },
     {
