@@ -77,7 +77,7 @@ function App() {
 
           <br/>
 
-          <p>{aboutProject}</p>
+          <p className="about-project">{aboutProject}</p>
         </div>
 
         <div className="btn-flex">
