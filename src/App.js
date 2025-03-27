@@ -1,4 +1,3 @@
-// import logo from "./logo.svg";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "./App.css";
@@ -10,25 +9,14 @@ import Experience from "./components/Experience";
 import NavBar from "./components/Nav";
 import Services from "./components/Services";
 import BlogList from "./components/Blog/BlogList";
+import BlogPost from "./components/Blog/BlogPost";
 import Footer from "./components/Footer";
-// import BlogPage from "./blog/BlogPage";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import gsap from "gsap";
 import Likes from "./components/Likes";
 import ScrollToTop from "./components/ScrollToTop";
-import { useState } from "react";
 
 function App() {
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   gsap.fromTo(
-  //     ".container",
-  //     { opacity: 0, y: 20 },
-  //     { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
-  //   );
-  // }, [location]);
-
   function BtnMain({ href, btnMainClassName, text }) {
     return (
       <a
@@ -47,7 +35,7 @@ function App() {
     return loading ? <div className="loader">Loading...</div> : null;
   }
 
-  function ProjectItem({ title, text, src,aboutProject, alt, hrefBtnMain, hrefBtnPrimary }) {
+  function ProjectItem({ title, text, src, aboutProject, alt, hrefBtnMain, hrefBtnPrimary }) {
     useEffect(() => {
       gsap.fromTo(
         ".project-card",
@@ -57,31 +45,13 @@ function App() {
     }, []);
     return (
       <div className="project-card">
-        {/* Render image only if src is provided */}
-        {/* {src && (
-          <img
-            className="img-className"
-            src={src}
-            alt={alt || "Project image"}
-          />
-        )} */}
-
-       
-
         <div className="project-description">
-          {/* Render title only if it exists */}
           {title && <h2>{title}</h2>}
-
-          {/* Render text only if it exists */}
           {text && <p>{text}</p>}
-
-          <br/>
-
+          <br />
           <p className="about-project">{aboutProject}</p>
         </div>
-
         <div className="btn-flex">
-          {/* Render buttons only if they exist */}
           {hrefBtnMain && <BtnMain text="Link" href={hrefBtnMain} />}
           {hrefBtnPrimary && <BtnPrimary text="Github" href={hrefBtnPrimary} />}
         </div>
@@ -127,22 +97,6 @@ function App() {
     );
   }
 
-  function NavItem({ lightDarkMode }) {
-    const location = useLocation(); // Get current path
-
-    return (
-      <div className="flex-nav ">
-        <span>{lightDarkMode}</span>
-        <Link
-          to={location.pathname === "/blog" ? "/" : "/blog"}
-          className="hover-underline blog"
-        >
-          {location.pathname === "/blog" ? "Home" : "Blog"}
-        </Link>
-      </div>
-    );
-  }
-
   function BlogListItems({ timestamp, blogtitle, slug }) {
     return (
       <div className="blog-flex">
@@ -156,22 +110,19 @@ function App() {
 
   function BackBtn({ back }) {
     return (
-      <div className=" back-container mt-2">
+      <div className="back-container mt-2">
         <Link className="back-link hover-underline" to="/blog">
-          {" "}
           {back}
         </Link>
       </div>
     );
   }
 
-  // function project({}) {}
-
   return (
     <Router>
       <ScrollToTop />
       <div className="container">
-        <NavBar NavItem={NavItem} />
+        <NavBar />
         <Routes>
           <Route
             path="/"
@@ -195,19 +146,9 @@ function App() {
               </>
             }
           />
-
-<Route path="/blog" element={<BlogList />} />
-         
-          <Route
-            path="/Likes"
-            element={
-              <Likes
-                ProjectItem={ProjectItem}
-                // BackBtn={BackBtn}
-                Loader={Loader}
-              />
-            }
-          />{" "}
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/Likes" element={<Likes ProjectItem={ProjectItem} Loader={Loader} />} />
         </Routes>
         <Footer />
       </div>

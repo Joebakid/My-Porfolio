@@ -620,6 +620,17 @@ pre {
   
 }
 
+.blog-post{
+  width: 70%;
+  margin: 0 auto;
+  padding: 200px 0;
+  overflow-x: hidden;
+}
+
+.blog-post-title{
+  color: var(--gray-color);
+}
+
 @media (max-width: 768px) {
 
 .sticky{
