@@ -210,7 +210,7 @@ body {
   -ms-transition: var(--transition-all);
   -o-transition: var(--transition-all);
   text-decoration: none;
- color:inherit;
+  color: inherit;
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
