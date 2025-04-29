@@ -40,7 +40,7 @@ function Nav() {
       <div className="flex-nav sticky">
         {/* Dark Mode Toggle */}
         <button className="mode" onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? "light" : "dark"}
+          {darkMode ? <p className="mode-p">light</p> : <p className="mode-p">dark</p>}
         </button>
 
         {/* Navigation Links */}

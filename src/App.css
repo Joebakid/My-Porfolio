@@ -225,14 +225,20 @@ body {
 
 .mode {
   background-color: var(--black-text);
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.mode-p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 /* HEADER */
