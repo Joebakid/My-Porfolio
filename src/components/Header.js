@@ -27,7 +27,7 @@ function Header({ BtnMain, BtnPrimary }) {
         <div>Project Advisor</div>
       </div>
       <p>
-        I am a self-taught front-end developer, dedicated to beautiful and
+        I am a self-taught fullstack developer, dedicated to beautiful and
         responsive design. I am available for open-source projects, internships,
         and collaborations.
       </p>
