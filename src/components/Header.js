@@ -36,7 +36,7 @@ function Header({ BtnMain, BtnPrimary }) {
         <BtnMain text="Contact Me" href="mailto:josephbawo.com" />
         <BtnPrimary
           text="View My Resume"
-          href="https://drive.google.com/file/d/1HXw5bsKeDIsl5KAPzsoVzDOH62-28-J2/view"
+          href="https://drive.google.com/file/d/1X7kcDH0C17yBK84an91GEtI29WDuRvjB/view?usp=drive_link"
         />
       </div>
 
