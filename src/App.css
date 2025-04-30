@@ -175,11 +175,10 @@ body {
 }
 
 .sticky {
-  background-color: var(--stikcy-color);
   position: fixed;
-  border: 1px solid var(--link-ex-color);
-  padding: 20px 30px;
-  border-radius: 20px;
+  /* border: 1px solid var(--link-ex-color); */
+  /* padding: 20px 30px;
+  border-radius: 20px; */
   left: 10%;
   right: 10%;
   display: flex;
@@ -202,6 +201,7 @@ body {
   border: 1px solid var(--link-ex-color);
   padding: 20px 30px;
   border-radius: 20px;
+  background-color: var(--stikcy-color);
 }
 
 .blog {
