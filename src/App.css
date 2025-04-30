@@ -178,28 +178,30 @@ body {
   background-color: var(--stikcy-color);
   position: fixed;
   border: 1px solid var(--link-ex-color);
+  padding: 20px 30px;
+  border-radius: 20px;
   left: 10%;
   right: 10%;
   display: flex;
   align-items: center;
-  padding: 20px;
+
   transition: all 1s ease-in-out;
-  border-radius: 20px;
-  top: 0;
+
+  top: 2%; /* slightly lowered from top */
   height: 70px;
   z-index: 2;
-  top: 2%;
-  margin-bottom: 300px;
 }
 
 /* NAV/////// */
 
 .flex-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* pushes items to both ends */
   align-items: center;
-  /* padding: 50px 0; */
-  /* margin: 50px 0; */
+  width: 100%;
+  border: 1px solid var(--link-ex-color);
+  padding: 20px 30px;
+  border-radius: 20px;
 }
 
 .blog {

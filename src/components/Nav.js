@@ -36,11 +36,15 @@ function Nav() {
   }, [darkMode]);
 
   return (
-    <nav className={`nav-container ${isScrolled ? "scrolled" : ""}`}>
-      <div className="flex-nav sticky">
+    <nav className={`nav-container ${isScrolled ? "scrolled sticky" : ""}`}>
+      <div className="flex-nav ">
         {/* Dark Mode Toggle */}
         <button className="mode" onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? <p className="mode-p">light</p> : <p className="mode-p">dark</p>}
+          {darkMode ? (
+            <p className="mode-p">light</p>
+          ) : (
+            <p className="mode-p">dark</p>
+          )}
         </button>
 
         {/* Navigation Links */}
