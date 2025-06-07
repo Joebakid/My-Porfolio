@@ -73,7 +73,7 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
             variants={projectVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }} // Triggers animation when 20% of element is in view
+            viewport={{ once: false, amount: 0.2 }} // Triggers animation when 20% of element is in view
           >
             <ProjectItem {...project} />
           </motion.div>
