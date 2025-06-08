@@ -27,7 +27,7 @@ function Header({ BtnMain, BtnPrimary }) {
         <div>Project Advisor</div>
       </div>
       <p>
-        I am a self-taught front-end developer, dedicated to beautiful and
+        I am a self-taught fullstack developer, dedicated to beautiful and
         responsive design. I am available for open-source projects, internships,
         and collaborations.
       </p>
@@ -36,7 +36,7 @@ function Header({ BtnMain, BtnPrimary }) {
         <BtnMain text="Contact Me" href="mailto:josephbawo.com" />
         <BtnPrimary
           text="View My Resume"
-          href="https://drive.google.com/file/d/1HXw5bsKeDIsl5KAPzsoVzDOH62-28-J2/view"
+          href="https://drive.google.com/file/d/1IAK2tHVfMFIgjycOUyaSDbP4qsx7xCBV/view?usp=drive_link"
         />
       </div>
 

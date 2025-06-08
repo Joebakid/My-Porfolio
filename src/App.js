@@ -9,12 +9,12 @@ import Experience from "./components/Experience";
 import NavBar from "./components/Nav";
 import Services from "./components/Services";
 import BlogList from "./components/Blog/BlogList";
-import BlogPost from "./components/Blog/BlogPost";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import Likes from "./components/Likes";
 import ScrollToTop from "./components/ScrollToTop";
+import { useRef } from "react";
 
 function App() {
   function BtnMain({ href, btnMainClassName, text }) {
@@ -30,9 +30,18 @@ function App() {
     );
   }
 
-  function Loader() {
-    const [loading, setLoading] = useState(true);
-    return loading ? <div className="loader">Loading...</div> : null;
+   const [loading, setLoading] = useState(true);
+  const timerSet = useRef(false);
+
+  if (!timerSet.current) {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    timerSet.current = true;
+  }
+
+  if (loading) {
+    return <div className="loader text-shadows">JOSEPH BAWO...</div>;
   }
 
   function ProjectItem({ title, text, src, aboutProject, alt, hrefBtnMain, hrefBtnPrimary }) {
@@ -147,8 +156,7 @@ function App() {
             }
           />
           <Route path="/blog" element={<BlogList />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
-          <Route path="/Likes" element={<Likes ProjectItem={ProjectItem} Loader={Loader} />} />
+          <Route path="/Likes" element={<Likes ProjectItem={ProjectItem} />} />
         </Routes>
         <Footer />
       </div>

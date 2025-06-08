@@ -492,11 +492,15 @@ body {
 /* loading */
 
 .loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 14px;
+  font-size: 2rem;
   color: #555;
-  margin-bottom: 10px;
 }
+
 
 .video-container {
   position: relative;

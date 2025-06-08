@@ -78,10 +78,12 @@ function Experience({ Template, LinkEx }) {
             <>
               In collaboration with{" "}
               <LinkEx text="david ogar" href="https://www.owogogah.com/" />
-             
-              
               {" we made "}
-              <LinkEx text="ronscryptotherapy" href="https://ronscryptotherapy.com/" /> with payment integration from fiat directly to cryptocurrency.
+              <LinkEx
+                text="ronscryptotherapy"
+                href="https://ronscryptotherapy.com/"
+              />{" "}
+              with payment integration from fiat directly to cryptocurrency.
             </>
           }
         />
@@ -92,8 +94,8 @@ function Experience({ Template, LinkEx }) {
               In collaboration with{" "}
               <LinkEx text="david ogar" href="https://www.owogogah.com/" />
               {" and "} myself, {" we made "}
-              <LinkEx text="ChuckBot" href="https://bot.chuckonbase.io/" /> [A telegram
-              trading bot].
+              <LinkEx text="ChuckBot" href="https://bot.chuckonbase.io/" /> [A
+              telegram trading bot].
             </>
           }
         />
@@ -109,7 +111,10 @@ function Experience({ Template, LinkEx }) {
                 href="https://www.fronkcartel.com/d9monz"
               />{" "}
               ,
-              <LinkEx text=" .dev" href="https://www.fronkcartel.com/devs" />
+              <LinkEx
+                text=" .dev"
+                href="https://fronk-cartel-latest.vercel.app/"
+              />
             </>
           }
         />
@@ -147,7 +152,7 @@ function Experience({ Template, LinkEx }) {
               made the Official webpage of
               <LinkEx
                 text="doginalduppets"
-                href="https://www.doginalduppets.com/"
+                href="https://doginal-puppet.vercel.app/"
               />{" "}
               Freelancing.
             </>
@@ -157,11 +162,8 @@ function Experience({ Template, LinkEx }) {
           text={
             <>
               Made my own startup called
-              <LinkEx
-                text="chronoliteNg"
-                href="https://chronolite.com.ng/"
-              />{" "}
-              . We sell male/female watches, female Bags, Tee's and Caps.
+              <LinkEx text="chronoliteNg" href="https://chronolite.com.ng/" /> .
+              We sell male/female watches, female Bags, Tee's and Caps.
             </>
           }
         />
