@@ -75,7 +75,26 @@ function BlogList() {
           </li>
         ))}
       </ul>
-    
+      <blockquote className="mt-20">
+      <p>
+        “I have lost my mind in this game like Vincent van Gogh. Dedicated his life to
+        his art and lost his mind in the process. That’s happened to me. But fuck it.
+        When that gold belt is around my waist, and my mother has a big mansion, my
+        girlfriend has a car for every day of the week, and my kids’ kids have everything
+        they ever want — then it will pay. Then I’ll be happy I lost my mind.”
+      </p>
+      <footer>
+        — <cite>
+          <a
+            href="https://www.youtube.com/shorts/VNGyOCTfz-M"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Conor McGregor, 2013 Interview
+          </a>
+        </cite>
+      </footer>
+    </blockquote>
     </div>
   );
 }
