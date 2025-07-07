@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import gsap from "gsap";
 
 const list = [
   {
@@ -29,16 +30,39 @@ const list = [
 ];
 
 function BlogList() {
+  const listRef = useRef([]);
+
+  useEffect(() => {
+    gsap.fromTo(
+      listRef.current,
+      {
+        opacity: 0,
+        y: 30,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.2,
+        duration: 0.6,
+        ease: "power2.out",
+      }
+    );
+  }, []);
+
   return (
     <div className="container-blog">
       <h2 className="blog-text">Blog</h2>
       <ul>
         {list.map((item, index) => (
-          <li key={index} className="blog-flex ">
+          <li
+            key={index}
+            ref={(el) => (listRef.current[index] = el)}
+            className="blog-flex"
+          >
             <p className="blog-time">{item.date}</p>
             <Link
               to={`/blog/${index}`}
-              className="blog-title blog-align  hover-underline"
+              className="blog-title blog-align hover-underline"
             >
               {item.title}
             </Link>

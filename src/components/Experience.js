@@ -167,6 +167,15 @@ function Experience({ Template, LinkEx }) {
             </>
           }
         />
+        <ExperienceItem
+          text={
+            <>
+           I and <LinkEx text="Unuigbokhai Noah(ui/ux)" href="https://linktr.ee/unuigbokhainoah?utm_source=linktree_profile_share&ltsid=dae4cb4f-18f8-452f-8b97-e30f4883fe69" />  designer   Made  
+              <LinkEx text="pdf house" href="https://pdfhouse.vercel.app/" /> .
+              to access pdf and school documents
+            </>
+          }
+        />
 
         <ExperienceItem
           text={<>Worked as computer attender at Edmart Computers</>}

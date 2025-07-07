@@ -12,6 +12,15 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       hrefBtnPrimary:
         "https://github.com/Joebakid/Ron-s-Crypto-Therapy---Master-Crypto-Trading",
     },
+   {
+  aboutProject:
+    "A digital resource hub for students to easily access and download academic PDFs, including textbooks, solutions, and lecture notes. Organized by course for quick reference and study support.",
+  title: "PDF House",
+  text: "React js",
+  hrefBtnMain: "https://pdfhouse.vercel.app/", 
+  hrefBtnPrimary: "https://github.com/Joebakid/PDFHOUSE", 
+}
+,
     {
       aboutProject:
         "A fully functional e-commerce platform with Paystack payment integration for buying goods like bags and watches. Ensures a secure and efficient checkout process.",
