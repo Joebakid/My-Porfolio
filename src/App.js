@@ -15,6 +15,9 @@ import gsap from "gsap";
 import Likes from "./components/Likes";
 import ScrollToTop from "./components/ScrollToTop";
 import { useRef } from "react";
+import Blog1 from './components/Blog/blog1'
+import Blog2 from './components/Blog/blog2'
+import Blog3 from './components/Blog/blog3'
 
 function App() {
   function BtnMain({ href, btnMainClassName, text }) {
@@ -156,6 +159,9 @@ function App() {
             }
           />
           <Route path="/blog" element={<BlogList />} />
+          <Route path='blog/blog1' element={<Blog1/>}/>
+          <Route path='blog/blog2' element={<Blog2/>}/>
+          <Route path='blog/blog3' element={<Blog3/>}/>
           <Route path="/Likes" element={<Likes ProjectItem={ProjectItem} />} />
         </Routes>
         <Footer />

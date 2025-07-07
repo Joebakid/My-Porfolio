@@ -140,6 +140,46 @@ function Likes({ Loader }) {
           artist: "Totó La Momposina",
           videoId: "9MUFCwX_jMg",
         },
+        {
+          title: "Summertime Sadness",
+          artist: "Lana Del Rey",
+          videoId: "tQz93eTCpSA",
+        },
+        {
+          title: "sad girl",
+          artist: "Lana Del Rey",
+          videoId: "TdrL3QxjyVw",
+        },
+        {
+          title: "Ocean eyes",
+          artist: "Billie",
+          videoId: "viimfQi_pUw",
+        },
+        {
+          title: "Say yes to heaven",
+          artist: "Lana del rey",
+          videoId: "MiAoetOXKcY",
+        },
+        {
+          title: "Glimpse of us",
+          artist: "Joji",
+          videoId: "FvOpPeKSf_4",
+        },
+        {
+          title: "Here With Me",
+          artist: "d4vd ",
+          videoId: "Ip6cw8gfHHI",
+        },
+        {
+          title: "Daylight (Official Music Video)",
+          artist: "David Kushner  ",
+          videoId: "MoN9ql6Yymw",
+        },
+        {
+          title: " Apocalypse (Before Sunrise)",
+          artist: " Cigarettes After Sex   ",
+          videoId: "MblPa7pCnZ8",
+        },
       ],
     },
     {

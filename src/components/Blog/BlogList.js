@@ -6,26 +6,32 @@ const list = [
   {
     title: "Mistakes I Made as a Beginner Developer and How to Avoid Them",
     date: "March 1, 2025",
+    path: "blog1",
   },
   {
     title: "How to Land Your First Job as a Frontend Developer",
     date: "March 5, 2025",
+    path: "blog2",
   },
   {
     title: "How to Build a Portfolio That Stands Out as a React Developer",
     date: "March 10, 2025",
+    path: "blog3",
   },
   {
     title: "How to Stay Motivated When Learning to Code",
     date: "March 15, 2025",
+    path: "blog4",
   },
   {
     title: "The Importance of Blogging as a Developer",
     date: "March 20, 2025",
+    path: "blog5",
   },
   {
     title: "Understanding Tokenomics: What Makes a Good Meme Coin?",
     date: "March 20, 2025",
+    path: "blog6",
   },
 ];
 
@@ -61,7 +67,7 @@ function BlogList() {
           >
             <p className="blog-time">{item.date}</p>
             <Link
-              to={`/blog/${index}`}
+              to={`/blog/${item.path}`}
               className="blog-title blog-align hover-underline"
             >
               {item.title}
@@ -69,6 +75,7 @@ function BlogList() {
           </li>
         ))}
       </ul>
+    
     </div>
   );
 }
