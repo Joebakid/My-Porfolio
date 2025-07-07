@@ -16,7 +16,7 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
   aboutProject:
     "A digital resource hub for students to easily access and download academic PDFs, including textbooks, solutions, and lecture notes. Organized by course for quick reference and study support.",
   title: "PDF House",
-  text: "React js",
+  text: "React js,Tailwind",
   hrefBtnMain: "https://pdfhouse.vercel.app/", 
   hrefBtnPrimary: "https://github.com/Joebakid/PDFHOUSE", 
 }
@@ -25,7 +25,7 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       aboutProject:
         "A fully functional e-commerce platform with Paystack payment integration for buying goods like bags and watches. Ensures a secure and efficient checkout process.",
       title: "Ecommerce",
-      text: "React js",
+      text: "React js,Tailwind",
       hrefBtnMain: "https://chronolite.com.ng/",
       hrefBtnPrimary: "https://github.com/Joebakid/chronoliteNG",
     },
