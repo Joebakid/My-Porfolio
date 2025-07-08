@@ -1,13 +1,21 @@
 import React from "react";
 
-
-function Template({ src, alt, title, video, text, subtitle1, subtitletext1,date ,content }) {
+function Template({
+  src,
+  alt,
+  title,
+  video,
+  text,
+  subtitle1,
+  subtitletext1,
+  date,
+  content,
+}) {
   const showImage = Boolean(src && src.trim().length > 0);
   const showVideo = Boolean(video && video.trim().length > 0);
 
   return (
     <>
-     
       {showVideo && (
         <div>
           <iframe
@@ -22,12 +30,10 @@ function Template({ src, alt, title, video, text, subtitle1, subtitletext1,date 
         </div>
       )}
 
-      <h3 className="gray bold uppercase smaller">{date}</h3>
+      {title && <h1 className="bold py-1 gray x-large">{title}</h1>}
 
-   
-      {title && <h1 className="bold py-2 gray x-large">{title}</h1>}
+      <h3 className="gray bold uppercase smaller pb-2">{date}</h3>
 
-     
       {showImage && (
         <div>
           <img
@@ -50,13 +56,6 @@ function Template({ src, alt, title, video, text, subtitle1, subtitletext1,date 
           </ul>
         </div>
       )}
-
-
-   
-     
-
-
-        
     </>
   );
 }
