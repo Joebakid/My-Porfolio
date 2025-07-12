@@ -120,6 +120,7 @@
 .card-stick{
   background-color: var(--link-ex-color);
   padding: 10px 40px;
+  border-radius: 10px;
   /* margin-top: 20px; */
 }
 
