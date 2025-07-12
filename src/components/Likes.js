@@ -2,23 +2,16 @@ import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function Likes({ Loader }) {
+gsap.registerPlugin(ScrollTrigger);
+
+function Likes() {
   const [videoLoaded, setVideoLoaded] = useState({});
-  const [showIframe, setShowIframe] = useState({});
-  // const [videoLoaded, setVideoLoaded] = useState({});
-  // const [showIframe, setShowIframe] = useState({});
+  const [activeVideoKey, setActiveVideoKey] = useState(null);
   const videoRefs = useRef([]);
 
-  const handleVideoClick = (index) => {
-    setShowIframe((prev) => {
-      // Reset all iframes before opening a new one
-      const updatedState = Object.keys(prev).reduce((acc, key) => {
-        acc[key] = false;
-        return acc;
-      }, {});
-
-      return { ...updatedState, [index]: true };
-    });
+  const handleVideoClick = (sectionIndex, index) => {
+    const key = `${sectionIndex}-${index}`;
+    setActiveVideoKey(key);
   };
 
   useEffect(() => {
@@ -43,7 +36,6 @@ function Likes({ Loader }) {
         );
       }
     });
-
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
@@ -59,7 +51,7 @@ function Likes({ Loader }) {
         { title: "The Social Network", year: "2010", videoId: "lB95KLmpLR4" },
         { title: "Oppenheimer", year: "2023", videoId: "uRJQJcy3f8w" },
         { title: "Shutter Island", year: "2010", videoId: "v8yrZSkKxTA" },
-        { title: "dune 2", year: "2023", videoId: "Way9Dexny3w" },
+        { title: "Dune 2", year: "2023", videoId: "Way9Dexny3w" },
       ],
     },
     {
@@ -68,118 +60,34 @@ function Likes({ Loader }) {
         { title: "Breaking Bad", year: "2008", videoId: "HhesaQXLuRY" },
         { title: "Stranger Things", year: "2016", videoId: "b9EkMc79ZSU" },
         { title: "Game of Thrones", year: "2011", videoId: "KPLWWIOCOOQ" },
-        { title: "Last of us", year: "2023", videoId: "uLtkt8BonwM" },
+        { title: "Last of Us", year: "2023", videoId: "uLtkt8BonwM" },
       ],
     },
     {
       title: "Music",
       items: [
-        {
-          title: "Blinding Lights",
-          artist: "The Weeknd",
-          videoId: "4NRXx6U8ABQ",
-        },
-        {
-          title: "Until I Found You ",
-          artist: "Stephen Sanchez ",
-          videoId: "GxldQ9eX2wo",
-        },
+        { title: "Blinding Lights", artist: "The Weeknd", videoId: "4NRXx6U8ABQ" },
+        { title: "Until I Found You", artist: "Stephen Sanchez", videoId: "GxldQ9eX2wo" },
         { title: "Someone Like You", artist: "Adele", videoId: "hLQl3WQQoQ0" },
-        {
-          title: "The night we met",
-          artist: "lord Horun",
-          videoId: "KtlgYxa6BMU",
-        },
-        {
-          title: "Beautiful Boy",
-          artist: "John Lenon",
-          videoId: "Lt3IOdDE5iA",
-        },
-        {
-          title: " Romantic Homicide",
-          artist: "d4vd ",
-          videoId: "eKL3TceSxvk",
-        },
-        {
-          title: "Kalam Eineh | شيرين - كلام عينيه",
-          artist: "Sherine",
-          videoId: "R8I3FOX7aZY",
-        },
-        {
-          title: " Brooklyn Baby",
-          artist: "Lana Del Rey",
-          videoId: "T5xcnjAG8pE",
-        },
-        {
-          title: " Stromae",
-          artist: " Formidable (ceci n'est pas une leçon)",
-          videoId: "hdwjwN-eFn0",
-        },
-        {
-          title: "Me and the Devil",
-          artist: "Soap&Skin",
-          videoId: "T7Oe1H87yi8",
-        },
-        {
-          title: "hotline bling ",
-          artist: "Billie Eilish",
-          videoId: "8jWgbnXBEPQ",
-        },
-        {
-          title: "Amour plastique",
-          artist: "VIDEOCLUB",
-          videoId: "5NjJLFI_oYs",
-        },
-        {
-          title: "AnnenMayKantereit x Giant Rooks",
-          artist: "Tom's Diner",
-          videoId: "5r3B7yz6J68",
-        },
-        {
-          title: "La Verdolaga",
-          artist: "Totó La Momposina",
-          videoId: "9MUFCwX_jMg",
-        },
-        {
-          title: "Summertime Sadness",
-          artist: "Lana Del Rey",
-          videoId: "tQz93eTCpSA",
-        },
-        {
-          title: "sad girl",
-          artist: "Lana Del Rey",
-          videoId: "TdrL3QxjyVw",
-        },
-        {
-          title: "Ocean eyes",
-          artist: "Billie",
-          videoId: "viimfQi_pUw",
-        },
-        {
-          title: "Say yes to heaven",
-          artist: "Lana del rey",
-          videoId: "MiAoetOXKcY",
-        },
-        {
-          title: "Glimpse of us",
-          artist: "Joji",
-          videoId: "FvOpPeKSf_4",
-        },
-        {
-          title: "Here With Me",
-          artist: "d4vd ",
-          videoId: "Ip6cw8gfHHI",
-        },
-        {
-          title: "Daylight (Official Music Video)",
-          artist: "David Kushner  ",
-          videoId: "MoN9ql6Yymw",
-        },
-        {
-          title: " Apocalypse (Before Sunrise)",
-          artist: " Cigarettes After Sex   ",
-          videoId: "MblPa7pCnZ8",
-        },
+        { title: "The Night We Met", artist: "Lord Huron", videoId: "KtlgYxa6BMU" },
+        { title: "Beautiful Boy", artist: "John Lennon", videoId: "Lt3IOdDE5iA" },
+        { title: "Romantic Homicide", artist: "d4vd", videoId: "eKL3TceSxvk" },
+        { title: "Kalam Eineh | شيرين - كلام عينيه", artist: "Sherine", videoId: "R8I3FOX7aZY" },
+        { title: "Brooklyn Baby", artist: "Lana Del Rey", videoId: "T5xcnjAG8pE" },
+        { title: "Formidable (ceci n'est pas une leçon)", artist: "Stromae", videoId: "hdwjwN-eFn0" },
+        { title: "Me and the Devil", artist: "Soap&Skin", videoId: "T7Oe1H87yi8" },
+        { title: "Hotline Bling", artist: "Billie Eilish", videoId: "8jWgbnXBEPQ" },
+        { title: "Amour Plastique", artist: "Videoclub", videoId: "5NjJLFI_oYs" },
+        { title: "Tom's Diner", artist: "AnnenMayKantereit x Giant Rooks", videoId: "5r3B7yz6J68" },
+        { title: "La Verdolaga", artist: "Totó La Momposina", videoId: "9MUFCwX_jMg" },
+        { title: "Summertime Sadness", artist: "Lana Del Rey", videoId: "tQz93eTCpSA" },
+        { title: "Sad Girl", artist: "Lana Del Rey", videoId: "TdrL3QxjyVw" },
+        { title: "Ocean Eyes", artist: "Billie", videoId: "viimfQi_pUw" },
+        { title: "Say Yes to Heaven", artist: "Lana Del Rey", videoId: "MiAoetOXKcY" },
+        { title: "Glimpse of Us", artist: "Joji", videoId: "FvOpPeKSf_4" },
+        { title: "Here With Me", artist: "d4vd", videoId: "Ip6cw8gfHHI" },
+        { title: "Daylight", artist: "David Kushner", videoId: "MoN9ql6Yymw" },
+        { title: "Apocalypse (Before Sunrise)", artist: "Cigarettes After Sex", videoId: "MblPa7pCnZ8" },
       ],
     },
     {
@@ -192,22 +100,23 @@ function Likes({ Loader }) {
   ];
 
   return (
-    <>
-      {/* <BackBtn back="< Go
-
-      back" /> */}
-      <div className="likes-container">
-        {sections.map((section, sectionIndex) => (
-          <div key={sectionIndex} className="likes-section">
-            <h2 className="section-title">{section.title}</h2>
-            <div className="video-grid">
-              {section.items.map((item, index) => (
-                <div key={index} className="video-item">
+    <div className="likes-container">
+      {sections.map((section, sectionIndex) => (
+        <div key={sectionIndex} className="likes-section">
+          <p className="text-center py-2 gray bold">
+            [ click to play {section.title.toLowerCase()} ]
+          </p>
+          <h2 className="section-title">{section.title}</h2>
+          <div className="video-grid">
+            {section.items.map((item, index) => {
+              const key = `${sectionIndex}-${index}`;
+              return (
+                <div key={key} className="video-item" ref={(el) => (videoRefs.current[key] = el)}>
                   <div
                     className="video-container"
-                    onClick={() => handleVideoClick(index)}
+                    onClick={() => handleVideoClick(sectionIndex, index)}
                   >
-                    {!showIframe[index] ? (
+                    {activeVideoKey !== key ? (
                       <img
                         className="video-thumbnail"
                         src={`https://img.youtube.com/vi/${item.videoId}/hqdefault.jpg`}
@@ -217,35 +126,25 @@ function Likes({ Loader }) {
                       <iframe
                         width="100%"
                         height="315"
-                        src={`https://www.youtube.com/embed/${item.videoId}?autoplay=1&enablejsapi=1`}
+                        src={`https://www.youtube.com/embed/${item.videoId}?autoplay=1&mute=0&playsinline=1`}
                         title={`${item.title} Trailer`}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                        onLoad={() =>
-                          setVideoLoaded((prev) => ({ ...prev, [index]: true }))
-                        }
-                        ref={(el) => {
-                          if (el) {
-                            el.contentWindow.postMessage(
-                              '{"event":"command","func":"pauseVideo","args":""}',
-                              "*"
-                            );
-                          }
-                        }}
-                      ></iframe>
+                        onLoad={() => setVideoLoaded((prev) => ({ ...prev, [key]: true }))}
+                      />
                     )}
                   </div>
                   <h3 className="title-text-like">
-                    {item.title} {item.year ? `(${item.year})` : ""}
+                    {item.title} {item.artist ? `- ${item.artist}` : ""} {item.year ? `(${item.year})` : ""}
                   </h3>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
-        ))}
-      </div>
-    </>
+        </div>
+      ))}
+    </div>
   );
 }
 

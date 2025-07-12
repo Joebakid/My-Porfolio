@@ -86,6 +86,10 @@
   color: gray;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .smaller {
   font-size: 13px;
 }
