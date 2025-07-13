@@ -27,12 +27,7 @@ const list = [
     title: "The Importance of Blogging as a Developer",
     date: "March 20, 2025",
     path: "blog5",
-  },
-  {
-    title: "Books i should consider reading",
-    date: "March 20, 2025",
-    path: "blog6",
-  },
+  }
 ];
 
 function BlogList() {

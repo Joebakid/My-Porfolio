@@ -15,7 +15,7 @@ import Blog2 from "./components/Blog/blog2";
 import Blog3 from "./components/Blog/blog3";
 import Blog4 from "./components/Blog/blog4";
 import Blog5 from "./components/Blog/blog5";
-import Blog6 from "./components/Blog/blog6";
+// import Blog6 from "./components/Blog/blog6";
 import Footer from "./components/Footer";
 import Likes from "./components/Likes";
 import ScrollToTop from "./components/ScrollToTop";
@@ -76,7 +76,7 @@ function App() {
           <Route path="/blog/blog3" element={<Blog3 />} />
           <Route path="/blog/blog4" element={<Blog4 />} />
           <Route path="/blog/blog5" element={<Blog5 />} />
-          <Route path="/blog/blog6" element={<Blog6 />} />
+          {/* <Route path="/blog/blog6" element={<Blog6 />} /> */}
           <Route path="/Likes" element={<Likes ProjectItem={ProjectItem} />} />
         </Routes>
 
