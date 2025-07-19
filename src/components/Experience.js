@@ -176,6 +176,16 @@ function Experience({ Template, LinkEx }) {
             </>
           }
         />
+        <ExperienceItem
+          text={
+            <>
+           I  Made <LinkEx text="The bawo brief" href="https://the-bawo-brief.vercel.app/" /> 
+           . posts weekly happening in the cryptocurrency world. check it out on
+              <LinkEx text="X" href="https://x.com/josephbawo2" /> .
+             
+            </>
+          }
+        />
 
         <ExperienceItem
           text={<>Worked as computer attender at Edmart Computers</>}
