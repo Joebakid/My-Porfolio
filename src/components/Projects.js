@@ -3,6 +3,15 @@ import { motion } from "framer-motion";
 
 function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
   const projects = [
+   {
+  aboutProject:
+    "A classic Tetris game built using modern web technologies. The game features smooth controls, intuitive UI, and responsive design. Players can enjoy the nostalgic gameplay experience directly in their browser with fast performance and clean animations.",
+  title: "Tetris Game",
+  text: "TypeScript, Tailwindcss, shadonUi",
+  hrefBtnMain: "https://tetris-chuck.vercel.app/", // replace with actual live link if available
+  hrefBtnPrimary:
+    "https://github.com/Joebakid?tab=repositories",  
+},
     {
       aboutProject:
         "A seamless crypto payment platform integrated with mentorship services. Users can make payments in various cryptocurrencies, including USDC, with real-time wallet updates.",

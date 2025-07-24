@@ -187,6 +187,19 @@ function Experience({ Template, LinkEx }) {
           }
         />
 
+          <ExperienceItem
+          text={
+            <>
+             I made 
+              <LinkEx
+                text=" Tetris game"
+                href="https://tetris-chuck.vercel.app/"
+              />
+              .
+            </>
+          }
+        />
+
         <ExperienceItem
           text={<>Worked as computer attender at Edmart Computers</>}
         />
