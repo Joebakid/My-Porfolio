@@ -73,6 +73,15 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       hrefBtnMain: "https://www.fronkcartel.com/d9monz",
       hrefBtnPrimary: "https://github.com/Fronk-Cartel/front_cartel",
     },
+    {
+  "src": "/img/tictactoe.png",
+  "aboutProject": "A simple and interactive Tic Tac Toe game where two players can compete in a turn-based match. Built for the web with responsive design and clear win-draw logic.",
+  "title": "TIC TAC TOE",
+  "text": "REACT JS",
+  "hrefBtnMain": "https://yourdomain.com/tictactoe",
+  "hrefBtnPrimary": "https://github.com/yourusername/tic-tac-toe"
+}
+
   ];
 
   // Animation variants for Framer Motion
