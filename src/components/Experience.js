@@ -94,7 +94,7 @@ function Experience({ Template, LinkEx }) {
               In collaboration with{" "}
               <LinkEx text="david ogar" href="https://www.owogogah.com/" />
               {" and "} myself, {" we made "}
-              <LinkEx text="ChuckBot" href="https://bot.chuckonbase.io/" /> [A
+              <LinkEx text="ChuckBot" href="https://chuckbot.xyz/" /> [A
               telegram trading bot].
             </>
           }
