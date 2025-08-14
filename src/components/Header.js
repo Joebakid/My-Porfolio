@@ -20,7 +20,7 @@ function Header({ BtnMain, BtnPrimary }) {
         <h2 className="text-shadows">hey</h2>
       </div>
       <h1> I'm Joseph Bawo</h1>
-      <h3 className="gray-text">A Web Developer.</h3>
+      <h3 className="gray-text">A Fullstack Developer.</h3>
       <div className="dropping-texts">
         <div>Technical Writer</div>
         <div>Blockchain Developer</div>

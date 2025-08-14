@@ -51,7 +51,7 @@ function About({ Template }) {
       <Template
         number="01"
         title="About"
-        children="Frontend dev who loves artistic combination of code and design. I centralize in the development and design of webpages. Currently a student of Federal University of Petroleum Resources studying marine engineering."
+        children="Fullstack dev who loves artistic combination of code and design. I centralize in the development and design of webpages. Currently a student of Federal University of Petroleum Resources studying marine engineering."
       />
     </section>
   );
