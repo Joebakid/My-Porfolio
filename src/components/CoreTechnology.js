@@ -56,7 +56,10 @@ function CoreTechnology({ Template }) {
     "REACT",
     "TYPESCRIPT",
     'GSAP',
-    'FRAMER-MOTION'
+    'FRAMER-MOTION',
+    'NODEJS',
+    'EXPRESS JS',
+    'MONGO DB'
   ];
 
   return (
