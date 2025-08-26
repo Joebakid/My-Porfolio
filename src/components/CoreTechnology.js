@@ -68,7 +68,7 @@ function CoreTechnology({ Template }) {
         <div className="technology-list">
           {technologies.map((tech, index) => (
             <div key={index} className="technology-item">
-              <span className="line"></span>
+              {/* <span className="line"></span> */}
               <span className="text">{tech}</span>
             </div>
           ))}
