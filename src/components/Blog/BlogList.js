@@ -20,47 +20,45 @@ const list = [
   },
   {
     title: "The significance of npx create-bawo-frontend my-app",
-    date: "March 15, 2025",
+    date: "March 26, 2025",
     path: "blog4",
   },
   {
     title: "Making your own npm package",
     date: "August 26, 2025",
     path: "blog5",
-  }
+  },
 ];
 
 function BlogList() {
   const listRef = useRef([]);
   const blockquoteRef = useRef(null);
 
-
   useEffect(() => {
-  gsap.fromTo(
-    listRef.current,
-    { opacity: 0, y: 30 },
-    {
-      opacity: 1,
-      y: 0,
-      stagger: 0.2,
-      duration: 0.6,
-      ease: "power2.out",
-    }
-  );
+    gsap.fromTo(
+      listRef.current,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        stagger: 0.2,
+        duration: 0.6,
+        ease: "power2.out",
+      }
+    );
 
-  gsap.fromTo(
-    blockquoteRef.current,
-    { opacity: 0, y: 50 },
-    {
-      opacity: 1,
-      y: 0,
-      duration: 0.8,
-      delay: list.length * 0.2, // start after list animation
-      ease: "power2.out",
-    }
-  );
-}, []);
-
+    gsap.fromTo(
+      blockquoteRef.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        delay: list.length * 0.2, // start after list animation
+        ease: "power2.out",
+      }
+    );
+  }, []);
 
   return (
     <div className="container-blog">
@@ -84,7 +82,8 @@ function BlogList() {
       </ul>
       <blockquote className="mt-20" ref={blockquoteRef}>
         <p>
-        "Programs must be written for people to read, and only incidentally for machines to execute."
+          "Programs must be written for people to read, and only incidentally
+          for machines to execute."
         </p>
         <footer>
           —{" "}
@@ -94,7 +93,8 @@ function BlogList() {
               target="_blank"
               rel="noopener noreferrer"
             >
-             Harold Abelson, co-author of Structure and Interpretation of Computer Programs
+              Harold Abelson, co-author of Structure and Interpretation of
+              Computer Programs
             </a>
           </cite>
         </footer>
