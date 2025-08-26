@@ -24,8 +24,8 @@ const list = [
     path: "blog4",
   },
   {
-    title: "The Importance of Blogging as a Developer",
-    date: "March 20, 2025",
+    title: "Making your own npm package",
+    date: "August 26, 2025",
     path: "blog5",
   }
 ];

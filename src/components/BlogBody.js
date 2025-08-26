@@ -1,13 +1,20 @@
 import React from "react";
 
-function BlogSection({ title, content }) {
+function BlogSection({ title, content, children }) {
   return (
-   
-    <div className="blog-section py-2">
-      <h2 className="gray uppercase font-medium">{title}</h2>
-      <p className="lineheight">{content}</p>
-    </div>
-   
+    <section className="blog-section py-2">
+      <h2 className="text-gray-400 uppercase font-medium">{title}</h2>
+      <div className="content max-w-none">
+        {children ? (
+          children
+        ) : (
+          <>
+            <br />
+            <p className="lineheight">{content}</p>
+          </>
+        )}
+      </div>
+    </section>
   );
 }
 
