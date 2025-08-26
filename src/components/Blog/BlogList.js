@@ -19,7 +19,7 @@ const list = [
     path: "blog3",
   },
   {
-    title: "How to Stay Motivated When Learning to Code",
+    title: "The significance of npx create-bawo-frontend my-app",
     date: "March 15, 2025",
     path: "blog4",
   },
