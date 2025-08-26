@@ -11,7 +11,7 @@ const Blog4 = () => {
         text="Typing one command to bootstrap a production-ready React app changes how fast you can move. This post explains why the command npx create-bawo-frontend my-app matters, the problem it solves, and when to use it."
         subtitle1="What problem does it solve?"
         subtitletext1="Spinning up a new React project used to mean an hour of repetitive setup: Vite config, Tailwind wiring, folder layout, linting, formatting, and README scaffolding. The CLI collapses all of that into a single action with sensible defaults so you can start building immediately."
-        date="March 15, 2025"
+        date="August 26, 2025"
       />
 
       {/* Full Blog Content */}
