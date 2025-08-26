@@ -211,6 +211,18 @@ function Experience({ Template, LinkEx }) {
             </>
           }
         />
+          <ExperienceItem
+          text={
+            <>
+             I made my own npm package for frontend devlopers
+              <LinkEx
+                text="[npx create-bawo-frontend my-app]"
+                href="https://github.com/Joebakid/create-bawo-frontend"
+              />
+              .
+            </>
+          }
+        />
 
         <ExperienceItem
           text={<>Worked as computer attender at Edmart Computers</>}
