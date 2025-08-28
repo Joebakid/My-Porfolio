@@ -3,15 +3,14 @@ import { motion } from "framer-motion";
 
 function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
   const projects = [
-   {
-  aboutProject:
-    "A classic Tetris game built using modern web technologies. The game features smooth controls, intuitive UI, and responsive design. Players can enjoy the nostalgic gameplay experience directly in their browser with fast performance and clean animations.",
-  title: "Tetris Game",
-  text: "TypeScript, Tailwindcss, shadonUi",
-  hrefBtnMain: "https://tetris-chuck.vercel.app/", // replace with actual live link if available
-  hrefBtnPrimary:
-    "https://github.com/Joebakid?tab=repositories",  
-},
+    {
+      aboutProject:
+        "A classic Tetris game built using modern web technologies. The game features smooth controls, intuitive UI, and responsive design.  ",
+      title: "Tetris Game",
+      text: "TypeScript, Tailwindcss, shadonUi",
+      hrefBtnMain: "https://tetris-chuck.vercel.app/", // replace with actual live link if available
+      hrefBtnPrimary: "https://github.com/Joebakid?tab=repositories",
+    },
     {
       aboutProject:
         "A seamless crypto payment platform integrated with mentorship services. Users can make payments in various cryptocurrencies, including USDC, with real-time wallet updates.",
@@ -21,15 +20,14 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       hrefBtnPrimary:
         "https://github.com/Joebakid/Ron-s-Crypto-Therapy---Master-Crypto-Trading",
     },
-   {
-  aboutProject:
-    "A digital resource hub for students to easily access and download academic PDFs, including textbooks, solutions, and lecture notes. Organized by course for quick reference and study support.",
-  title: "PDF House",
-  text: "React js,Tailwind",
-  hrefBtnMain: "https://pdfhouse.vercel.app/", 
-  hrefBtnPrimary: "https://github.com/Joebakid/PDFHOUSE", 
-}
-,
+    {
+      aboutProject:
+        "A digital resource hub for students to easily access and download academic PDFs, including textbooks, solutions, and lecture notes. Organized by course for quick reference and study support.",
+      title: "PDF House",
+      text: "React js,Tailwind",
+      hrefBtnMain: "https://pdfhouse.vercel.app/",
+      hrefBtnPrimary: "https://github.com/Joebakid/PDFHOUSE",
+    },
     {
       aboutProject:
         "A fully functional e-commerce platform with Paystack payment integration for buying goods like bags and watches. Ensures a secure and efficient checkout process.",
@@ -74,20 +72,25 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       hrefBtnPrimary: "https://github.com/Fronk-Cartel/front_cartel",
     },
     {
-  "src": "/img/tictactoe.png",
-  "aboutProject": "A simple and interactive Tic Tac Toe game where two players can compete in a turn-based match. Built for the web with responsive design and clear win-draw logic.",
-  "title": "TIC TAC TOE",
-  "text": "REACT JS",
-  "hrefBtnMain": "https://tic-tac-tan-one.vercel.app/",
-  "hrefBtnPrimary": "https://github.com/Joebakid/tic-tac"
-}
-
+      src: "/img/tictactoe.png",
+      aboutProject:
+        "A simple and interactive Tic Tac Toe game where two players can compete in a turn-based match. Built for the web with responsive design and clear win-draw logic.",
+      title: "TIC TAC TOE",
+      text: "REACT JS",
+      hrefBtnMain: "https://tic-tac-tan-one.vercel.app/",
+      hrefBtnPrimary: "https://github.com/Joebakid/tic-tac",
+    },
   ];
 
   // Animation variants for Framer Motion
   const projectVariants = {
     hidden: { opacity: 0, y: 50, scale: 0.95 },
-    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   return (
