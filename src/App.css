@@ -106,26 +106,24 @@
   font-size: medium;
 }
 
-.hover:hover{
-  text-decoration:line-through;
-  color:var(--color-blog);
+.hover:hover {
+  text-decoration: line-through;
+  color: var(--color-blog);
   transition: var(--transition-all);
 }
 
-.list-disc{
- list-style: lower-alpha;
-  
+.list-disc {
+  list-style: lower-alpha;
 }
 
-.card-stick{
+.card-stick {
   background-color: var(--link-ex-color);
   padding: 10px 40px;
   border-radius: 10px;
   /* margin-top: 20px; */
 }
 
-
-.flex{
+.flex {
   display: flex;
   margin: 0;
   align-items: center;
@@ -140,7 +138,6 @@
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 } */
-
 
 blockquote {
   font-style: italic;
@@ -583,7 +580,7 @@ body {
 }
 
 .about-project {
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
 
   text-align: left;
 }
