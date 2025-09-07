@@ -99,6 +99,14 @@ function Experience({ Template, LinkEx }) {
             </>
           }
         />
+        <ExperienceItem
+          text={
+            <>
+            I   made  
+              <LinkEx text="techjojo {online ecom gadget website}" href="https://techjojoenterprises.vercel.app/" /> [no backend but client wants to be in control of adding/removing products without me interfering. so i wrote some code that get the data from csv file. client is familiar with excel so a win win].
+            </>
+          }
+        />
 
         <ExperienceItem
           text={
