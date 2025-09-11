@@ -20,7 +20,7 @@ import Footer from "./components/Footer";
 import Likes from "./components/Likes";
 import ScrollToTop from "./components/ScrollToTop";
 import gsap from "gsap";
-import { Analytics } from "@vercel/analytics/react"
+// import { Analytics } from "@vercel/analytics/react"
 
 // ⏳ Show loader only once using localStorage
 function App() {
@@ -45,7 +45,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Analytics/>
+      {/* <Analytics/> */}
       <div className="container">
         <NavBar />
 
