@@ -797,6 +797,55 @@ pre {
   object-fit: contain;
 }
 
+.page-not-found-style {
+  min-height: 70vh;            /* enough vertical space to center nicely */
+  display: flex;
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* center vertically */
+  padding: 24px;
+  text-align: center;
+}
+
+.page-not-found-content {
+  display: grid;
+  gap: 12px;
+}
+
+.page-not-found-content h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.page-not-found-content p {
+  margin: 0 0 4px 0;
+  opacity: 0.8;
+}
+
+.btn-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #222;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: background 0.2s ease, transform 0.08s ease, box-shadow 0.2s ease;
+}
+
+.btn-home:hover {
+  background: #1a1a1a;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.2);
+}
+
+.btn-home:active {
+  transform: translateY(1px);
+}
+
+
 /* .blog-content-container{
   display: flex;
   flex-direction: column;

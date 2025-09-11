@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 
@@ -20,6 +20,7 @@ import Footer from "./components/Footer";
 import Likes from "./components/Likes";
 import ScrollToTop from "./components/ScrollToTop";
 import gsap from "gsap";
+import PageNotFound from "./components/PageNotFound";
 // import { Analytics } from "@vercel/analytics/react"
 
 // ⏳ Show loader only once using localStorage
@@ -31,10 +32,11 @@ function App() {
     if (hasLoaded) {
       setLoading(false);
     } else {
-      setTimeout(() => {
+      const t = setTimeout(() => {
         setLoading(false);
         localStorage.setItem("hasLoaded", "true");
       }, 3000);
+      return () => clearTimeout(t);
     }
   }, []);
 
@@ -80,6 +82,9 @@ function App() {
           <Route path="/blog/blog5" element={<Blog5 />} />
           {/* <Route path="/blog/blog6" element={<Blog6 />} /> */}
           <Route path="/Likes" element={<Likes ProjectItem={ProjectItem} />} />
+
+          {/* 404 must be the last child inside <Routes> */}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
 
         <Footer />
