@@ -75,11 +75,11 @@ function App() {
             }
           />
           <Route path="/blog" element={<BlogList />} />
-          <Route path="/blog/blog1" element={<Blog1 />} />
-          <Route path="/blog/blog2" element={<Blog2 />} />
-          <Route path="/blog/blog3" element={<Blog3 />} />
-          <Route path="/blog/blog4" element={<Blog4 />} />
-          <Route path="/blog/blog5" element={<Blog5 />} />
+          <Route path="/blog/mistakes-i-made" element={<Blog1 />} />
+          <Route path="/blog/how-to-land-a-frontend-job" element={<Blog2 />} />
+          <Route path="/blog/porfolio" element={<Blog3 />} />
+          <Route path="/blog/blosignificance-of-npx-create-bawo-frontend" element={<Blog4 />} />
+          <Route path="/blog/making-you-own-package" element={<Blog5 />} />
           {/* <Route path="/blog/blog6" element={<Blog6 />} /> */}
           <Route path="/Likes" element={<Likes ProjectItem={ProjectItem} />} />
 

@@ -6,27 +6,27 @@ const list = [
   {
     title: "Mistakes I Made as a Beginner Developer and How to Avoid Them",
     date: "March 1, 2025",
-    path: "blog1",
+    path: "mistakes-i-made",
   },
   {
     title: "How to Land Your First Job as a Frontend Developer",
     date: "March 5, 2025",
-    path: "blog2",
+    path: "how-to-land-a-frontend-job",
   },
   {
     title: "How to Build a Portfolio That Stands Out as a React Developer",
     date: "March 10, 2025",
-    path: "blog3",
+    path: "porfolio",
   },
   {
     title: "The significance of npx create-bawo-frontend my-app",
     date: "March 26, 2025",
-    path: "blog4",
+    path: "significance-of-npx-create-bawo-frontend",
   },
   {
     title: "Making your own npm package",
     date: "August 26, 2025",
-    path: "blog5",
+    path: "making-you-own-package",
   },
 ];
 
