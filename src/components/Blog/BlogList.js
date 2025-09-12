@@ -26,7 +26,7 @@ const list = [
   {
     title: "Making your own npm package",
     date: "August 26, 2025",
-    path: "making-you-own-package",
+    path: "making-your-own-package",
   },
 ];
 
