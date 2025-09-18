@@ -23,6 +23,9 @@ import gsap from "gsap";
 import PageNotFound from "./components/PageNotFound";
 // import { Analytics } from "@vercel/analytics/react"
 
+
+
+
 // ⏳ Show loader only once using localStorage
 function App() {
   const [loading, setLoading] = useState(true);
