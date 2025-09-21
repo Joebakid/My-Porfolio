@@ -34,6 +34,10 @@
   --color-blog: #ee6352;
 }
 
+.mode, .mode * {
+  font: inherit !important;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
