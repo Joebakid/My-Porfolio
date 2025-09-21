@@ -5,6 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 /* //////////// */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/* /////////////// */
+ @import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
 
 :root {
   --bgc-color: #000;
@@ -38,7 +40,9 @@
   margin: 0;
   /* font-family: "IBM Plex Mono", sans-serif; */
   /* font-family: "Lilita One", sans-serif; */
-  font-family: "DM Sans", sans-serif;
+  /* font-family: "DM Sans", sans-serif; */
+  font-family: "Asimovian", sans-serif;
+  
   font-weight: 400;
 }
 
