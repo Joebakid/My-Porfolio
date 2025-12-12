@@ -29,12 +29,21 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       hrefBtnPrimary: "https://github.com/Joebakid/PDFHOUSE",
     },
     {
-      aboutProject:
-        "A fully functional e-commerce platform with Paystack payment integration for buying goods like bags and watches. Ensures a secure and efficient checkout process.",
+      aboutProject:"A fully functional e-commerce platform with Paystack payment integration for buying goods like bags and watches. Ensures a secure and efficient checkout process.",
+       
       title: "Ecommerce",
-      text: "React js,Tailwind",
+      text: "React js,Tailwind,jsPDF,docx,file-saver",
       hrefBtnMain: "https://chronolite.com.ng/",
       hrefBtnPrimary: "https://github.com/Joebakid/chronoliteNG",
+    },
+    {
+      aboutProject:
+        
+         "A dynamic contract generator that allows users to create, customize, and export professional contracts in minutes. Built with React and Tailwind, it features step-by-step forms, reusable templates, and clean PDF output for freelancers, businesses, and legal use.",
+      title: "Genrator for contracts",
+      text: "React js,Tailwind",
+      hrefBtnMain: "https://contract-generator-xyz.vercel.app/",
+      hrefBtnPrimary: "https://github.com/Joebakid/Contract-Generator",
     },
     {
       aboutProject:

@@ -103,7 +103,7 @@ function Experience({ Template, LinkEx }) {
           text={
             <>
             I   made  
-              <LinkEx text="techjojo {online ecom gadget website}" href="https://techjojoenterprises.vercel.app/" /> [no backend but client wants to be in control of adding/removing products without me interfering. so i wrote some code that get the data from csv file. client is familiar with excel so a win win].
+              <LinkEx text="techjojo {online ecom gadget website}" href="https://techjojo.store/" /> [no backend but client wants to be in control of adding/removing products without me interfering. so i wrote some code that get the data from csv file. client is familiar with excel so a win win].
             </>
           }
         />
@@ -141,17 +141,13 @@ function Experience({ Template, LinkEx }) {
         />
 
         <ExperienceItem
-          text={
-            <>
-              Made the Official webpage of{" "}
-              <LinkEx
-                text="  DogeAiPepe"
-                href="https://doge-ai-pepe.vercel.app/"
-              />{" "}
-              Freelancing.
-            </>
-          }
-        />
+  text={
+    <>
+      I built a <LinkEx text="Contract Generator" href="https://contract-generator-xyz.vercel.app/" /> 
+      that automatically creates professional, ready-to-use contracts based on the user’s selected profession.
+    </>
+  }
+/>
 
         <ExperienceItem
           text={
@@ -184,16 +180,8 @@ function Experience({ Template, LinkEx }) {
             </>
           }
         />
-        <ExperienceItem
-          text={
-            <>
-           I  Made <LinkEx text="The bawo brief" href="https://the-bawo-brief.vercel.app/" /> 
-           . posts weekly happening in the cryptocurrency world. check it out on
-              <LinkEx text="X" href="https://x.com/josephbawo2" /> .
-             
-            </>
-          }
-        />
+       
+
 
           <ExperienceItem
           text={
