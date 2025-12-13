@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap'); */
+
+
+
+
 
 :root {
   --bgc-color: #000;
@@ -34,12 +38,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
- font-family: "Comfortaa", sans-serif;
+
+   font-family: "Cabinet Grotesk", sans-serif;
+ /* font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
    
   font-weight: 400;
   
-  font-weight: 400;
+  font-weight: 400; */
 }
 
 .light-mode {
