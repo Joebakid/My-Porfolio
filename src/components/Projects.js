@@ -45,6 +45,15 @@ function Projects({ BtnMain, BtnPrimary, Template, ProjectItem }) {
       hrefBtnMain: "https://contract-generator-xyz.vercel.app/",
       hrefBtnPrimary: "https://github.com/Joebakid/Contract-Generator",
     },
+     {
+      aboutProject:
+        
+         "create-bawo-frontend is a zero-config CLI tool that scaffolds modern React (Vite) or Next.js projects with Tailwind CSS, Zustand, Prettier, and optional extras like shadcn/ui, Framer Motion, and GSAP — all in one command.",
+      title: "Create-Bawo-Frontend",
+      text: "React js,Tailwind",
+      hrefBtnMain: "https://create-bawo-frontend.vercel.app/",
+      hrefBtnPrimary: "https://github.com/Joebakid/create-bawo-frontend",
+    },
     {
       aboutProject:
         "A decentralized NFT verification platform that allows users to check the rarity and authenticity of NFTs with a fast and responsive interface.",
